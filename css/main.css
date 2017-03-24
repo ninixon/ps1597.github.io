@@ -56,6 +56,7 @@ html, body {
 /* MEDIA SCREENS */
 
 @media screen and (max-width: 800px) {
+	
     .home {
 			padding:0px;
 		}
