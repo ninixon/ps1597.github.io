@@ -1,0 +1,62 @@
+/*
+
+Colors:
+Main Blue: BAD9D7
+Main Grey: e3e3e3
+
+Black: 282828
+Dark Blue: b3bfbf
+Red: de8896
+
+*/
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+/* SHADOWS */
+
+@-webkit-keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgba(0,0,0,.19)}}@keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgba(0,0,0,.19)}}
+
+.shadow-drop-center {
+	-webkit-animation: shadow-drop-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .6s both;
+	-moz-animation: shadow-drop-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .6s both;
+	animation: shadow-drop-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .6s both;
+}
+
+
+
+
+/* HOME PAGE */
+
+.home {
+	padding: 40px;
+	height: 100%;
+}
+
+.blue-gradient {
+	width:100%;
+	height:90%;
+
+	background: #BAD9D7; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #BAD9D7, #e3e3e3); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #BAD9D7, #e3e3e3); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #BAD9D7, #e3e3e3); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #BAD9D7, #e3e3e3); /* Standard syntax */
+}
+
+
+
+
+
+
+
+
+/* MEDIA SCREENS */
+
+@media screen and (max-width: 800px) {
+    .home {
+			padding:0px;
+		}
+}
