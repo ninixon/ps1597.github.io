@@ -16,16 +16,14 @@ html, body {
 }
 
 /* SHADOWS */
-
-@-webkit-keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgba(0,0,0,.19)}}@keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgba(0,0,0,.19)}}
+@-webkit-keyframes header-img{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgba(0,0,0,.07)}}@keyframes header-img{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgba(0,0,0,.07)}}
+@-webkit-keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgba(0,0,0,0.19)}}@keyframes shadow-drop-center{0%{box-shadow:0 0 0 0 transparent}100%{box-shadow:0 0 30px 0 rgba(0,0,0,.19)}}
 
 .shadow-drop-center {
 	-webkit-animation: shadow-drop-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .6s both;
 	-moz-animation: shadow-drop-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .6s both;
 	animation: shadow-drop-center 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .6s both;
 }
-
-
 
 
 /* HOME PAGE */
@@ -38,7 +36,9 @@ html, body {
 .blue-gradient {
 	width:100%;
 	height:90%;
-
+	position: relative;
+	z-index: 0;
+	min-height: 600px;
 	background: #BAD9D7; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #BAD9D7, #e3e3e3); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(bottom right, #BAD9D7, #e3e3e3); /* For Opera 11.1 to 12.0 */
@@ -46,7 +46,27 @@ html, body {
   background: linear-gradient(to bottom right, #BAD9D7, #e3e3e3); /* Standard syntax */
 }
 
+.logo {
 
+}
+
+.logo img {
+	position: absolute;
+	width:20px;
+	padding: 50px;
+	z-index: 10;
+}
+
+.header-img img{
+	width:300px;
+	border-radius: 300px;
+	border: 30px solid white;
+	-webkit-animation: header-img 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .6s both;
+	-moz-animation: header-img 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .6s both;
+	animation: header-img 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) .6s both;
+	vertical-align:middle;
+
+}
 
 
 
@@ -56,7 +76,7 @@ html, body {
 /* MEDIA SCREENS */
 
 @media screen and (max-width: 800px) {
-	
+
     .home {
 			padding:0px;
 		}
