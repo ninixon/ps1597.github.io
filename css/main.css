@@ -208,16 +208,44 @@ p {
 .v-divider.two { right: 50%; }
 
 
-.quick-facts {
-	border: 1px solid #e3e3e3;
-	padding:30px;
+.bio {
+	margin-left: -13px;
+
 }
 
 .buffer {
 
 }
 
+.buffer2 {
+
+}
+
 /* MEDIA SCREENS */
+@media screen and (max-height: 635px) {
+	.buffer2 {
+		width:100px;
+		height:90px;
+	}
+
+}
+
+@media screen and (max-height: 563px) {
+	.buffer2 {
+		width:100px;
+		height:130px;
+	}
+
+}
+
+@media screen and (max-height: 500px) {
+	.buffer2 {
+		width:100px;
+		height:160px;
+	}
+
+}
+
 @media screen and (max-width: 991px) {
 	.buffer {
 		width:100px;
